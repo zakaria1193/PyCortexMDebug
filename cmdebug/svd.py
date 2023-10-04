@@ -144,6 +144,10 @@ class SVDFile:
                     pass
             except SVDNonFatalError as e:
                 print(e)
+            except Exception as e:
+                print(e)
+
+        print("Done parsing SVD file")
 
 
 def add_register(parent: Union["SVDPeripheral", "SVDRegisterCluster"], node):
